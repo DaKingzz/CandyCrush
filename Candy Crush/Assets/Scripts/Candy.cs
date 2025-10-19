@@ -20,6 +20,12 @@ public class Candy : MonoBehaviour
         xIndex = x;
         yIndex = y;
     }
+
+    public void setIndicies(int x, int y)
+    {
+        xIndex = x;
+        yIndex = y;
+    }
 }
 
 public enum CandyType
