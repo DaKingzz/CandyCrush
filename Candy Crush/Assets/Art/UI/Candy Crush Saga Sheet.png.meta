@@ -1,0 +1,862 @@
+fileFormatVersion: 2
+guid: a7e0a475b643da54b991617f00d9e3e6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 937
+        width: 1024
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502695cf2f6f0964da6e65daf1b752df
+      internalID: -835725459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 416
+        width: 108
+        height: 517
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837f5da7aea8f424f9b892b20474f648
+      internalID: -581161775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 778
+        width: 312
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d197f4829f567ef4995965671a705a9a
+      internalID: 1894804964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 762
+        width: 409
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0eca133b8c6d8848b30014dae169595
+      internalID: 889981552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 817
+        width: 125
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00b61bc8bbf16614bbf933c4c7015952
+      internalID: 180670216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 978
+        y: 887
+        width: 44
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3653640052424b44c82832fe3c84f9f8
+      internalID: 1953061373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 837
+        width: 42
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f64547a557dda479f3c0112eea7054
+      internalID: -1944186903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 698
+        width: 125
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26c223a4685b9a7478fa780646dc0d56
+      internalID: 92064427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 795
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5447888b30a99429cab821e70a93bc
+      internalID: -923473268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 623
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cabb294fe0d7944a377e6c80f7e973
+      internalID: 2100640637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 660
+        width: 128
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bc93ec379be15d49b6b5f8db1cb0115
+      internalID: 818214249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 641
+        width: 124
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b1471a664196a4da0cb2d95c5698e3
+      internalID: 588703015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 580
+        width: 283
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63cb4ff0f1908814b9087ff27d2f3c52
+      internalID: 727501929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 752
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5525b1d0a695c040a7f6e8d2fef353b
+      internalID: -734865456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 581
+        width: 125
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3261c41bb4c1f64e93f633c25907d02
+      internalID: -1396383383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 638
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73c9c5a33ef28a7448c85d0e741a874b
+      internalID: 165056987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 440
+        width: 379
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8724a6b50568e064bb9c5c8f426f726d
+      internalID: -2057888941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 578
+        width: 59
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15e29d64b0006a8498ddae763a8d729c
+      internalID: -246733560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 463
+        width: 233
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03c707b6e2831f347995234f61b0ab5c
+      internalID: -1152407413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 487
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7883ceb38d1524392be871260ede89
+      internalID: -305038119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 465
+        width: 125
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e016f67dc4f58143addaad94ee7fdd0
+      internalID: -276389494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 522
+        width: 57
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536a4401d2ed11445ba1f806dfa00d6b
+      internalID: 488863096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 419
+        width: 63
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0bf80cba4bd4e84e920cf36647b7234
+      internalID: -1169622397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 311
+        width: 200
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2d78e4da53fbd4184c0054d0bc2362
+      internalID: -591490286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 152
+        width: 281
+        height: 260
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f0b922debe36b4d9f6066abdf81d1f
+      internalID: 1216748180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 318
+        width: 97
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d916f7a14dac0448624a1d03e1c73b
+      internalID: 1462217965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 323
+        width: 107
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74f6fac42c9e196438321f5edcbfac02
+      internalID: 875471747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 191
+        width: 124
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bce8e9977d4e10f44959102cfdda180f
+      internalID: -1398424733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 243
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3889564aa34783a41b0277e0284e09c5
+      internalID: 1169161770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9
+        width: 139
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5f2c49bbfa91147b8f3279d48333e0
+      internalID: 681177039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 25
+        width: 124
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c989fe7b7eefa4ba30b4617af5743c
+      internalID: -1882708581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 30
+        width: 159
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a67479758ebcea4b8d8e171a881e10e
+      internalID: -612573464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 5
+        width: 99
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b3dbac606842614b8d4a3ec24e67a83
+      internalID: 1289518300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Candy Crush Saga Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 83
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbc39f97d41fc1b4b8fea787392decd0
+      internalID: -178590819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Candy Crush Saga Sheet_0: -835725459
+      Candy Crush Saga Sheet_1: -581161775
+      Candy Crush Saga Sheet_10: 818214249
+      Candy Crush Saga Sheet_11: 588703015
+      Candy Crush Saga Sheet_12: 727501929
+      Candy Crush Saga Sheet_13: -734865456
+      Candy Crush Saga Sheet_14: -1396383383
+      Candy Crush Saga Sheet_15: 165056987
+      Candy Crush Saga Sheet_16: -2057888941
+      Candy Crush Saga Sheet_17: -246733560
+      Candy Crush Saga Sheet_18: -1152407413
+      Candy Crush Saga Sheet_19: -305038119
+      Candy Crush Saga Sheet_2: 1894804964
+      Candy Crush Saga Sheet_20: -276389494
+      Candy Crush Saga Sheet_21: 488863096
+      Candy Crush Saga Sheet_22: -1169622397
+      Candy Crush Saga Sheet_23: -591490286
+      Candy Crush Saga Sheet_24: 1216748180
+      Candy Crush Saga Sheet_25: 1462217965
+      Candy Crush Saga Sheet_26: 875471747
+      Candy Crush Saga Sheet_27: -1398424733
+      Candy Crush Saga Sheet_28: 1169161770
+      Candy Crush Saga Sheet_29: 681177039
+      Candy Crush Saga Sheet_3: 889981552
+      Candy Crush Saga Sheet_30: -1882708581
+      Candy Crush Saga Sheet_31: -612573464
+      Candy Crush Saga Sheet_32: 1289518300
+      Candy Crush Saga Sheet_33: -178590819
+      Candy Crush Saga Sheet_4: 180670216
+      Candy Crush Saga Sheet_5: 1953061373
+      Candy Crush Saga Sheet_6: -1944186903
+      Candy Crush Saga Sheet_7: 92064427
+      Candy Crush Saga Sheet_8: -923473268
+      Candy Crush Saga Sheet_9: 2100640637
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
