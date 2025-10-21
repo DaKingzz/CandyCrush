@@ -18,3 +18,4 @@ MonoBehaviour:
   movesLimit: 15
   targetScore: 1000
   randomSeed: 0
+  refillRule: 2

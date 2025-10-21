@@ -1,6 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+
+public enum RefillRule
+{
+    Level1 = 1,
+    Level2 = 2
+}
 
 [CreateAssetMenu(menuName = "Match3/Level Config", fileName = "LevelConfig")]
 public class LevelConfig : ScriptableObject
@@ -18,5 +22,7 @@ public class LevelConfig : ScriptableObject
 
     [Header("RNG")]
     public int randomSeed = 0; // 0 = use system random
-}
 
+    [Header("Refill / Generation Rules")]
+    public RefillRule refillRule = RefillRule.Level1; // set Level2.asset to Level2
+}

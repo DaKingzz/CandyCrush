@@ -5,7 +5,7 @@ using UnityEngine;
 public class SwapController : MonoBehaviour
 {
     [SerializeField] private LayerMask candyMask;
-    [SerializeField] private float dragThreshold = 0.2f; // min world distance to consider a direction
+    [SerializeField] private float dragThreshold = 0.2f;
 
     private BoardManager board;
     private Camera cam;
@@ -20,7 +20,7 @@ public class SwapController : MonoBehaviour
 
     void Update()
     {
-        if (GameState.Paused) return; // block input while paused
+        if (GameState.Paused || GameState.Busy) return;
         if (GameState.MovesLeft <= 0) return;
 
         if (Input.GetMouseButtonDown(0))
@@ -72,17 +72,8 @@ public class SwapController : MonoBehaviour
         var b = board.GetAt(nx, ny);
         if (b == null) return;
 
-        StartCoroutine(DoSwap(a, b));
-    }
-
-    IEnumerator DoSwap(CandyView a, CandyView b)
-    {
-        // One move per swap attempt (we’re not checking matches yet)
+        // one move per attempted swap
         GameState.ConsumeMove();
-
-        yield return board.SwapCandies(a, b);
-
-        // Later: if no match, swap back.
-        // For now we leave it as-is; matching/refill logic will come later.
+        StartCoroutine(board.ResolveSwap(a, b));
     }
 }

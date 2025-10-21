@@ -13,7 +13,7 @@ public class CandyView : MonoBehaviour
     [HideInInspector] public int y;
 
     [Header("Motion")]
-    public float moveDuration = 0.12f; // quick snappy swap
+    public float moveDuration = 0.12f; // for a quick snappy swap, this should be enough I think
     public AnimationCurve moveCurve = AnimationCurve.EaseInOut(0, 0, 1, 1);
 
     public void SetGridPos(int gx, int gy) { x = gx; y = gy; }
