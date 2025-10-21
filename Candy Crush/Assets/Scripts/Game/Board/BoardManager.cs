@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class BoardManager : MonoBehaviour
 {
     // Static so GridUtils can read dimensions
@@ -13,6 +14,11 @@ public class BoardManager : MonoBehaviour
     [SerializeField] private CandyView[] candyPrefabs = new CandyView[5]; // Blue, Green, Red, Purple, Yellow
     [SerializeField] private float cellSize = 1.0f;
     [SerializeField] private Vector2 gridCenter = Vector2.zero; // world point (0,0) = screen middle
+
+    [Header("Debug / Gizmos")]
+    [SerializeField] private bool showNeighborhoodGizmos = true;
+    [SerializeField] private int gizmoX = 3;
+    [SerializeField] private int gizmoY = 3;
 
     // Runtime
     private CandyView[,] grid;
@@ -391,4 +397,43 @@ public class BoardManager : MonoBehaviour
         }
         return initialType; // give up, very rare
     }
+
+#if UNITY_EDITOR
+    void OnDrawGizmos()
+    {
+        if (!showNeighborhoodGizmos) return;
+        if (grid == null || grid.Length == 0) return;
+        if (!IsInside(gizmoX, gizmoY)) return;
+
+        Vector3 cellCenter = GridUtils.GridToWorld(gizmoX, gizmoY, cellSize, gridCenter);
+
+        // Draw center cell (yellow)
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireCube(cellCenter, Vector3.one * (cellSize * 0.9f));
+
+        // Draw neighbors (color by candy type)
+        foreach (var n in GetNeighbors8(gizmoX, gizmoY))
+        {
+            var cv = grid[n.x, n.y];
+            Vector3 pos = GridUtils.GridToWorld(n.x, n.y, cellSize, gridCenter);
+
+            Color c = Color.gray;
+            if (cv != null)
+            {
+                switch (cv.type)
+                {
+                    case CandyType.Red: c = Color.red; break;
+                    case CandyType.Blue: c = Color.blue; break;
+                    case CandyType.Green: c = Color.green; break;
+                    case CandyType.Yellow: c = Color.yellow; break;
+                    case CandyType.Purple: c = new Color(0.6f, 0, 0.6f); break;
+                }
+            }
+
+            Gizmos.color = c;
+            Gizmos.DrawWireCube(pos, Vector3.one * (cellSize * 0.9f));
+        }
+    }
+#endif
 }
+
