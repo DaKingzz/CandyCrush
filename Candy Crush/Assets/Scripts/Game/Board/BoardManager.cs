@@ -408,7 +408,7 @@ public class BoardManager : MonoBehaviour
         Vector3 cellCenter = GridUtils.GridToWorld(gizmoX, gizmoY, cellSize, gridCenter);
 
         // Draw center cell (yellow)
-        Gizmos.color = Color.yellow;
+        Gizmos.color = Color.black;
         Gizmos.DrawWireCube(cellCenter, Vector3.one * (cellSize * 0.9f));
 
         // Draw neighbors (color by candy type)
