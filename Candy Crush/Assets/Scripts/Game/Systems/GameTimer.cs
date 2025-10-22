@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameTimer : MonoBehaviour
 {
-    [SerializeField] private float startSeconds = 90f; // always 90s
+    [SerializeField] private float startSeconds = 90f;
     public float TimeLeft { get; private set; }
 
     void Awake()
@@ -19,8 +19,6 @@ public class GameTimer : MonoBehaviour
 
         TimeLeft -= Time.deltaTime;
         if (TimeLeft < 0f) TimeLeft = 0f;
-
-        // Later: trigger lose state when TimeLeft == 0
     }
 }
 

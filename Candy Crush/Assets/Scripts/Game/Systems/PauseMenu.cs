@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PauseMenu : MonoBehaviour
 {
-    [SerializeField] private GameObject panel; // full-screen UI panel (parent)
-    [SerializeField] private GameUIController ui; // for restart/return
+    [SerializeField] private GameObject panel;
+    [SerializeField] private GameUIController ui;
     private bool wasPaused = false;
 
     void Start()
@@ -15,6 +15,7 @@ public class PauseMenu : MonoBehaviour
 
     public void TogglePause()
     {
+        AudioManager.PlayButton();
         Show(!GameState.Paused);
     }
 
@@ -25,9 +26,21 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = show ? 0f : 1f;
     }
 
-    // Button hooks
-    public void OnResume() => Show(false);
-    public void OnRestart() { Time.timeScale = 1f; ui.RestartLevel(); }
-    public void OnReturnToMenu() { Time.timeScale = 1f; ui.ReturnToMenu(); }
+    // Button functions
+    public void OnResume()
+    {
+        AudioManager.PlayButton();
+        Show(false);
+    }
+    public void OnRestart() 
+    {
+        AudioManager.PlayButton();
+        Time.timeScale = 1f; ui.RestartLevel(); 
+    }
+    public void OnReturnToMenu() 
+    {
+        AudioManager.PlayButton();
+        Time.timeScale = 1f; ui.ReturnToMenu(); 
+    }
 }
 

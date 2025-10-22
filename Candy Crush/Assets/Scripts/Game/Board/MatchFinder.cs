@@ -57,7 +57,6 @@ public static class MatchFinder
         return result;
     }
 
-    // ---------- NEW: grouping with type ----------
     public struct MatchGroup
     {
         public CandyType type;

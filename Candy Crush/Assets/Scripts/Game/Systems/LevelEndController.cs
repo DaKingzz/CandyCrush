@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class LevelEndController : MonoBehaviour
 {
-    [SerializeField] private GameTimer timer;                 // drag HUD GameTimer here
-    [SerializeField] private EndLevelUIController endUI;      // drag EndCanvas (with EndLevelUIController) here
+    [SerializeField] private GameTimer timer;
+    [SerializeField] private EndLevelUIController endUI;   
 
     private ScoreManager score;
     private LevelConfig cfg;
@@ -19,7 +19,6 @@ public class LevelEndController : MonoBehaviour
 
     void Start()
     {
-        // Arm after one frame to let GameEntry/ScoreManager initialize
         StartCoroutine(ArmNextFrame());
     }
 
@@ -77,6 +76,7 @@ public class LevelEndController : MonoBehaviour
                 {
                     Time.timeScale = 1f;
                     GameState.SetPaused(false);
+                    AudioManager.PlayButton();
                     SceneManager.LoadScene("MainMenu");
                 });
             }
@@ -90,12 +90,14 @@ public class LevelEndController : MonoBehaviour
                     {
                         Time.timeScale = 1f;
                         GameState.SetPaused(false);
+                        AudioManager.PlayButton();
                         SceneManager.LoadScene("Game");
                     },
                     onMenu: () =>
                     {
                         Time.timeScale = 1f;
                         GameState.SetPaused(false);
+                        AudioManager.PlayButton();
                         SceneManager.LoadScene("MainMenu");
                     });
             }

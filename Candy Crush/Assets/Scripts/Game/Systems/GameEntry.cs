@@ -12,7 +12,6 @@ public class GameEntry : MonoBehaviour
         if (ActiveLevel == null)
         {
             Debug.LogWarning("ActiveLevel was null; loading a default ScriptableObject from Resources as fallback.");
-            // Secondary Option: load a default from Resources/Levels/Level1
             ActiveLevel = Resources.Load<LevelConfig>("Levels/Level1");
         }
 

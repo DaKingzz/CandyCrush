@@ -93,7 +93,7 @@ public class BoardManager : MonoBehaviour
         var cv = Instantiate(prefab, pos, Quaternion.identity, transform);
         cv.SetGridPos(x, y);
         if (!instant)
-            cv.SnapToWorld(pos); // (could animate from above if you like)
+            cv.SnapToWorld(pos);
 
         grid[x, y] = cv;
     }
@@ -118,6 +118,7 @@ public class BoardManager : MonoBehaviour
         if (matches.Count == 0)
         {
             // swap back (invalid move)
+            AudioManager.PlayFail(); // invlid sound effect
             SwapInGrid(a, b);
             yield return StartCoroutine(SwapTween(a, b));
             GameState.RefundMove();
@@ -167,6 +168,7 @@ public class BoardManager : MonoBehaviour
             var groups = MatchFinder.FindGroups(GetAt, Width, Height);
             if (score != null && groups != null && groups.Count > 0)
             {
+                AudioManager.PlaySuccess();
                 int mult = firstStep ? 1 : 2;   // cascade waves get x2
                 score.ApplyGroups(groups, mult);
             }
@@ -185,7 +187,7 @@ public class BoardManager : MonoBehaviour
 
             // 4) Next cascade wave
             current = MatchFinder.FindMatches(GetAt, Width, Height);
-            firstStep = false; // any subsequent waves are cascades
+            firstStep = false; // any other waves are cascades, pretty straightforward
         }
     }
 
@@ -271,14 +273,14 @@ public class BoardManager : MonoBehaviour
         yield return null;
     }
 
-    // =======================================
-    // REFILL - Level 2 (Neighborhood-weighted)
-    // =======================================
+    // =============================================
+    // REFILL - Level 2 (Neighborhood-weighted prob)
+    // =============================================
     IEnumerator RefillLevel2()
     {
         int gemTypes = Mathf.Clamp(GameEntry.ActiveLevel.gemTypes, 3, candyPrefabs.Length);
 
-        // For each column, fill gaps bottom->top (same as L1), but color is chosen by 8-neighborhood weights.
+        // For each column, fill gaps bottom->top (same as level 1), but color is chosen by 8-neighborhood weights.
         for (int x = 0; x < Width; x++)
         {
             int y = 0;
@@ -396,23 +398,24 @@ public class BoardManager : MonoBehaviour
         {
             int t = (attempt == 0) ? initialType : Random.Range(0, gemTypes);
 
-            // would this create horizontal 3?
+            // We check, would this create horizontal 3?
             if (x >= 2 && grid[x - 1, y] != null && grid[x - 2, y] != null)
             {
                 if ((int)grid[x - 1, y].type == t && (int)grid[x - 2, y].type == t)
-                    continue; // pick again
+                    continue; // if so, pick again
             }
-            // would this create vertical 3?
+            // We wanna check, would this create vertical 3?
             if (y >= 2 && grid[x, y - 1] != null && grid[x, y - 2] != null)
             {
                 if ((int)grid[x, y - 1].type == t && (int)grid[x, y - 2].type == t)
-                    continue; // pick again
+                    continue; // if so, pick again
             }
             return t;
         }
-        return initialType; // give up, very rare
+        return initialType;
     }
 
+    // Gismos to help vizualize the neighberhoods
 #if UNITY_EDITOR
     void OnDrawGizmos()
     {

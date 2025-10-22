@@ -28,8 +28,8 @@ public class LevelConfig : ScriptableObject
 
 
     [Header("RNG")]
-    public int randomSeed = 0; // 0 = use system random
+    public int randomSeed = 0;
 
     [Header("Refill / Generation Rules")]
-    public RefillRule refillRule = RefillRule.Level1; // set Level2.asset to Level2
+    public RefillRule refillRule = RefillRule.Level1;
 }

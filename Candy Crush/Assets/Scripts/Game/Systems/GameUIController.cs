@@ -23,7 +23,6 @@ public class GameUIController : MonoBehaviour
     [Header("Side Panel Counters")]
     [SerializeField] private CandyCounter[] counters;
 
-    // ---- single declaration (was duplicated before) ----
     private Dictionary<CandyType, TextMeshProUGUI> counterMap;
 
     void Awake()
@@ -76,11 +75,13 @@ public class GameUIController : MonoBehaviour
 
     public void RestartLevel()
     {
+        AudioManager.PlayButton();
         SceneManager.LoadScene("Game");
     }
 
     public void ReturnToMenu()
     {
+        AudioManager.PlayButton();
         SceneManager.LoadScene("MainMenu");
     }
 }

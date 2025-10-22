@@ -9,7 +9,6 @@ public class ScoreManager : MonoBehaviour
 
     public int Score { get; private set; }
 
-    // color -> remaining groups to match
     private Dictionary<CandyType, int> goals = new Dictionary<CandyType, int>();
     
     void Start()
@@ -21,7 +20,6 @@ public class ScoreManager : MonoBehaviour
     public void InitializeGoals(int gemTypes)
     {
         goals.Clear();
-        // Only initialize the colors that are actually active in this level
         for (int i = 0; i < gemTypes; i++)
         {
             goals[(CandyType)i] = goalsPerColor;
@@ -39,11 +37,11 @@ public class ScoreManager : MonoBehaviour
     {
         if (groups == null || groups.Count == 0) return;
 
-        // 100 points per group * multiplier
+        // 100 points per group * multiplier (fixed at 2 cuz yeah)
         int add = groups.Count * 100 * Mathf.Max(1, multiplier);
         Score += add;
 
-        // decrement per color by number of groups of that color
+        // We decrement per color by number of groups of that color
         foreach (var g in groups)
         {
             if (goals.ContainsKey(g.type) && goals[g.type] > 0)

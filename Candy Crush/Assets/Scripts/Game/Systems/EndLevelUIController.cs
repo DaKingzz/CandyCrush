@@ -25,7 +25,6 @@ public class EndLevelUIController : MonoBehaviour
     [SerializeField] private Button fRetryButton;
     [SerializeField] private Button fMenuButton;
 
-    // optional: dim grey for inactive stars
     [SerializeField] private Color inactiveStarColor = new Color(1f, 1f, 1f, 0.25f);
 
     public void ShowVictory(int score, int s1, int s2, int s3, System.Action onContinue)
@@ -36,7 +35,7 @@ public class EndLevelUIController : MonoBehaviour
 
         SetupStars(score, s1, s2, s3, vStar1, vStar2, vStar3);
         if (vScoreText) vScoreText.text = "Score: " + score;
-        if (vThresholdsText) vThresholdsText.text = $"1: {s1}      2: {s2}      3: {s3}";
+        if (vThresholdsText) vThresholdsText.text = $"{s1}    {s2}    {s3}";
 
         if (vContinueButton)
         {
@@ -53,7 +52,7 @@ public class EndLevelUIController : MonoBehaviour
 
         SetupStars(score, s1, s2, s3, fStar1, fStar2, fStar3);
         if (fScoreText) fScoreText.text = "Score: " + score;
-        if (fThresholdsText) fThresholdsText.text = $"1: {s1}      2: {s2}      3: {s3}";
+        if (fThresholdsText) fThresholdsText.text = $"{s1}    {s2}    {s3}";
 
         if (fRetryButton)
         {
@@ -80,7 +79,7 @@ public class EndLevelUIController : MonoBehaviour
     {
         if (!img) return;
         img.color = on ? Color.white : inactiveStarColor;
-        img.enabled = true; // ensure visible
+        img.enabled = true; // ensure stars will be visible
     }
 }
 
