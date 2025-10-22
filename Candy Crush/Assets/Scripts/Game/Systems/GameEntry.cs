@@ -17,8 +17,7 @@ public class GameEntry : MonoBehaviour
         }
 
         GameState.InitializeFromLevel();
-        // Here you would create your BoardManager and hand it ActiveLevel
-        // e.g., FindObjectOfType<BoardManager>().Init(ActiveLevel);
+        
     }
 }
 

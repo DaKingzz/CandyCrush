@@ -17,5 +17,8 @@ MonoBehaviour:
   gemTypes: 5
   movesLimit: 15
   targetScore: 1000
+  star1Score: 800
+  star2Score: 2000
+  star3Score: 3000
   randomSeed: 0
   refillRule: 2

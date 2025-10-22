@@ -20,6 +20,13 @@ public class LevelConfig : ScriptableObject
     public int movesLimit = 15;
     public int targetScore = 1000;
 
+    [Header("Stars / Rewards")]
+    [Tooltip("Score needed for 1, 2, and 3 stars.")]
+    public int star1Score = 500;
+    public int star2Score = 1500;
+    public int star3Score = 2000;
+
+
     [Header("RNG")]
     public int randomSeed = 0; // 0 = use system random
 

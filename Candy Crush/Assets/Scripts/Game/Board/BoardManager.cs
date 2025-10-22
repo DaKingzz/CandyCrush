@@ -9,6 +9,8 @@ public class BoardManager : MonoBehaviour
     public static int Width { get; private set; }
     public static int Height { get; private set; }
     private RefillRule activeRule;
+    private ScoreManager score;
+
 
     [Header("Setup")]
     [SerializeField] private CandyView[] candyPrefabs = new CandyView[5]; // Blue, Green, Red, Purple, Yellow
@@ -35,6 +37,8 @@ public class BoardManager : MonoBehaviour
         Width = lvl.width;
         Height = lvl.height;
         activeRule = (lvl != null) ? lvl.refillRule : RefillRule.Level1;
+        score = FindObjectOfType<ScoreManager>();
+
     }
 
     void Start()
@@ -155,25 +159,36 @@ public class BoardManager : MonoBehaviour
     IEnumerator ResolveAllCascades(HashSet<Vector2Int> initialMatches)
     {
         var current = initialMatches;
+        bool firstStep = true; // first wave from the player swap
 
         while (current.Count > 0)
         {
+            // groups for scoring and per-color goals
+            var groups = MatchFinder.FindGroups(GetAt, Width, Height);
+            if (score != null && groups != null && groups.Count > 0)
+            {
+                int mult = firstStep ? 1 : 2;   // cascade waves get x2
+                score.ApplyGroups(groups, mult);
+            }
+
             // 1) Clear matched
             yield return StartCoroutine(ClearMatches(current));
 
             // 2) Gravity
             yield return StartCoroutine(ApplyGravity());
 
-            // 3) Refill (Level 1 or Level 2 rules)
+            // 3) Refill
             if (activeRule == RefillRule.Level2)
                 yield return StartCoroutine(RefillLevel2());
             else
                 yield return StartCoroutine(RefillLevel1());
 
-            // 4) Find new matches created by the refill (cascade)
+            // 4) Next cascade wave
             current = MatchFinder.FindMatches(GetAt, Width, Height);
+            firstStep = false; // any subsequent waves are cascades
         }
     }
+
 
     IEnumerator ClearMatches(HashSet<Vector2Int> matches)
     {
