@@ -6,7 +6,7 @@ Game Project meant to simulate the original mobile game Candy Crush Saga. This g
 * Open Boot Scene <br>
 * Pres on Play (ESC to Quit Game while on Main Menu)
 
-## Inpiration/Sources
+## Inspiration/Sources
 * The Official's Candy Crush candies and similar UI assets
 * Unity's Official Documentation
 * Online forums (exchanges on how to apply certain game mechanics)
